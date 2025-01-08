@@ -15,7 +15,7 @@ import {
 } from "./pages/index";
 import Header from "./Header";
 
-axios.defaults.baseURL = "https://airstay-zeta.vercel.app/";
+axios.defaults.baseURL = "https://airstay-bjrx.onrender.com/";
 axios.defaults.withCredentials = true;
 axios.defaults.timeout = 50000;
 
