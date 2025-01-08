@@ -15,7 +15,7 @@ import {
 } from "./pages/index";
 import Header from "./Header";
 
-axios.defaults.baseURL = "http://localhost:4000";
+axios.defaults.baseURL = "https://airstay-zeta.vercel.app/";
 axios.defaults.withCredentials = true;
 axios.defaults.timeout = 50000;
 
