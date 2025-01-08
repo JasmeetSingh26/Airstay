@@ -129,12 +129,12 @@ function PlacePage({}: Props) {
           <div className="grid gap-1 md:gap-3 grid-cols-[1fr_1fr_1fr] rounded-2xl overflow-hidden">
             {place.photos
               ?.slice(0, 3)
-              .map((photo: { url: string }, index: number) => (
+              .map((photo: string | any, index: number) => (
                 <div key={index} className={`${index === 0 ? "" : "grid"}`}>
                   <img
                     className="object-cover w-full h-[200px] md:h-[300px]"
                     src={photo}
-                    alt={photo.caption || `Photo ${index + 1}`}
+                    alt={`Photo ${index + 1}`}
                   />
                 </div>
               ))}

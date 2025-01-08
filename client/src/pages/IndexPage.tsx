@@ -67,7 +67,6 @@ function IndexPage({}: Props) {
                       className={`aspect-square object-cover`}
                       src={place.photos[0]}
                       alt={place.title}
-                      onLoad={() => setImageLoaded(true)}
                     />
 
                     <button
