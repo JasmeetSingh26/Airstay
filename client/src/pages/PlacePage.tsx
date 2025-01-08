@@ -127,15 +127,17 @@ function PlacePage({}: Props) {
         {/* Photos Section */}
         <div className="relative mt-6">
           <div className="grid gap-1 md:gap-3 grid-cols-[1fr_1fr_1fr] rounded-2xl overflow-hidden">
-            {place.photos?.slice(0, 3).map((photo, index) => (
-              <div key={index} className={`${index === 0 ? "" : "grid"}`}>
-                <img
-                  className="object-cover w-full h-[200px] md:h-[300px]"
-                  src={photo}
-                  alt={photo.caption || `Photo ${index + 1}`}
-                />
-              </div>
-            ))}
+            {place.photos
+              ?.slice(0, 3)
+              .map((photo: { url: string }, index: number) => (
+                <div key={index} className={`${index === 0 ? "" : "grid"}`}>
+                  <img
+                    className="object-cover w-full h-[200px] md:h-[300px]"
+                    src={photo}
+                    alt={photo.caption || `Photo ${index + 1}`}
+                  />
+                </div>
+              ))}
           </div>
           <div className="absolute inline-flex bottom-3 right-3 px-3 py-1 bg-white rounded-2xl text-black gap-1 items-center shadow-md">
             <svg

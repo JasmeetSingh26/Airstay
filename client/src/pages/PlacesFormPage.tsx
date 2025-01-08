@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import Perks from "./Perks";
 import AccountNav from "../AccountNav";
-import { StarIcon, TrashIcon } from "lucide-react";
+import { TrashIcon } from "lucide-react";
 
 type Props = {};
 

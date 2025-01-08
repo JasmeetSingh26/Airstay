@@ -21,7 +21,6 @@ type Props = {};
 function IndexPage({}: Props) {
   const [places, setPlaces] = useState<any>([]);
   const [loading, setLoading] = useState(true);
-  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     console.log("IndexPage");
